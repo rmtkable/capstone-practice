@@ -111,8 +111,8 @@ class AddAttraction extends Component {
             indoors: this.state.indoors,
             childFriendly: this.state.childFriendly
         }
-        console.log(BACKEND_URL + 'attractions/add', attraction)
-        axios.post(BACKEND_URL + 'attractions/add', attraction)
+        console.log('https://capstone-practice-backend.onrender.com/attractions/add', attraction)
+        axios.post('https://capstone-practice-backend.onrender.com/attractions/add', attraction)
         .then(res => console.log(res.data));
         // window.location='/viewattractions'
         this.props.history.push('/viewattractions');

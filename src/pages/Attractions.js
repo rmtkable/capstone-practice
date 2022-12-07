@@ -36,7 +36,7 @@ export default class Attractions extends Component {
         };
     }
     componentDidMount() {
-        axios.get(BACKEND_URL + 'attractions/')
+        axios.get('https://capstone-practice-backend.onrender.com/attractions/')
         .then(response => {
             this.setState({
                 attractions: response.data,

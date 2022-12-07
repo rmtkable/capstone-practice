@@ -26,7 +26,7 @@ export default class SingleAttraction extends Component {
         }
     }
     componentDidMount() {
-        axios.get(BACKEND_URL + 'attractions/' + this.props.match.params.id)
+        axios.get('https://capstone-practice-backend.onrender.com/attractions/' + this.props.match.params.id)
         .then((response) => {
             this.setState({
                 name: response.data.name,
